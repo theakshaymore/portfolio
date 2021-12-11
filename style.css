@@ -186,7 +186,7 @@ html {
   box-shadow: 0px 6px 18px -5px #4299e1;
   display: none;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .know-more:hover {
   background: #2b6cb0;
@@ -307,6 +307,13 @@ html {
   border-radius: 0.5rem;
   font-size: large;
   font-weight: 500;
+  text-decoration: none;
+  background-color: #3182ce;
+  height: 45px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
 }
 
 /* footer */
