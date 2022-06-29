@@ -257,7 +257,7 @@ html {
 /* Work */
 .section-work {
   background: white;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .work-card {
@@ -269,6 +269,12 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 760px) {
+  .work-card {
+    margin: 0;
+  }
 }
 
 .work-title {
