@@ -150,14 +150,14 @@ html {
 /* header */
 
 .hero {
-  padding: 2rem;
+  /* padding: 1rem; */
   /* margin-top:1rem; */
-  margin: 1rem 0rem 2rem 0rem;
+  /* margin: 1rem 0rem 2rem 0rem; */
   /* height:50vh; */
 }
 
 .hero-image {
-  max-width: 500px;
+  max-width: 400px;
   display: block;
   margin: auto;
   object-fit: cover;
@@ -166,7 +166,7 @@ html {
 
 .hero-heading {
   color: #3182ce;
-  padding-top: 3rem;
+  padding-top: 1rem;
   text-align: center;
   font-size: 2.25rem;
 }
@@ -274,6 +274,10 @@ html {
 @media (max-width: 760px) {
   .work-card {
     margin: 0;
+  }
+  #technologies {
+    margin-top: 50px;
+    /* border-top: #4a5568 thin; */
   }
 }
 
@@ -383,7 +387,7 @@ html {
   .hero {
     display: flex;
     max-width: 900px;
-    margin: 5rem auto 10rem auto;
+    margin: 5rem auto 20rem auto;
 
     /* margin-top:5rem; */
   }
