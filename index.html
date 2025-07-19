@@ -27,445 +27,397 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
     <!-- Navigation -->
     <nav class="navigation">
       <div class="nav-brand">
-        <!-- <a href="/">AM</a> -->
-        <img src="./assets/AM.jpg" alt="AM" width="30" height="30" />
+        <span class="brand-text">akshay</span>
       </div>
 
-      <div>
-        <ul class="list-non-bullet nav-pills">
-          <li class="list-item-inline">
-            <a class="link link-active" href="/"> Home </a>
-          </li>
-
-          <li class="list-item-inline">
-            <a class="link" href="#projects"> Projects </a>
-          </li>
-
-          <li class="list-item-inline">
-            <a class="link" href="./blogs.html"> Blogs </a>
-          </li>
-          <li class="list-item-inline">
-            <a class="link" href="#footer"> Contact </a>
-          </li>
-        </ul>
+      <div class="nav-menu">
+        <a href="#about" class="nav-pill">01. About</a>
+        <a href="#apps" class="nav-pill">02. Apps</a>
+        <a href="#achievements" class="nav-pill">03. Achievements</a>
+        <a href="#blog" class="nav-pill">04. Blog</a>
+        <a href="#talks" class="nav-pill">05. Talks</a>
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="hero">
-      <img
-        src="./assets/pp-1.gif"
-        class="hero-image"
-        alt="Header image coding boy  "
-      />
-      <div class="container-center">
-        <h1 class="hero-heading">Akshay More</h1>
-        <h1 class="hero-sub-heading">Full Stack Developer</h1>
-        <a href="#projects" class="link link-primary link-pink know-more">
-          See Projects</a
-        >
-      </div>
-    </header>
+    <!-- Hero Section -->
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="welcome-text">Welcome, I'm</p>
+            <h1 class="hero-name">Akshay More</h1>
+            <p class="hero-subtitle">
+              A Full Stack Developer solving problems through code
+            </p>
+            <div class="hero-buttons">
+              <a href="#apps" class="btn btn-primary">My work</a>
+              <a href="#about" class="btn btn-secondary">About me</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-image-container">
+              <img
+                src="./assets/akshayProfile.jpg"
+                alt="Akshay More"
+                class="profile-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-decoration"></div>
+      </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section-work container container-center">
-      <div class="section-title">
-        <h1 class="section-heading">My work</h1>
-        <h3 class="section-sub-heading">
-          I love to build projects and write blogs
-        </h3>
-      </div>
-      <div class="section-work container container-center section-projects">
-        <!-- 1st row -->
-        <div class="section-info project-row">
-          <div class="work-card">
-            <img
-              src="./assets/projimages/embrand.gif"
-              alt=""
-              class="work-image"
-            />
-            <p class="project-title mt-3">Embrand</p>
-            <p class="work-subtitle">
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <h2 class="section-title">01. About Me</h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">💻</div>
+            <h3>I build apps</h3>
+            <p>I love building projects which make users' lives better!</p>
+            <a href="#apps" class="about-link">Try my apps</a>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">✍</div>
+            <h3>I write blogs</h3>
+            <p>You can find my blog where I document my learning!</p>
+            <a href="#blog" class="about-link">Read my blog</a>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">🏆</div>
+            <h3>I do hackathons</h3>
+            <p>I love hacking a solution for real-world problems!</p>
+            <a href="#achievements" class="about-link">View my achievements</a>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">👨‍🎓</div>
+            <h3>I study CS</h3>
+            <p>I continuously strive to enhance my skills and knowledge!</p>
+            <a href="#skills" class="about-link">View my skills</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apps Section -->
+      <section id="apps" class="apps-section">
+        <h2 class="section-title">02. My Apps</h2>
+        <div class="apps-grid">
+          <div class="app-card">
+            <h3>Embrand</h3>
+            <p>
               An E-commerce website built using ReactJS, ExpressJS, MongoDB and
               NodeJS that allows you to buy and sell clothes, tangible goods,
               digital products or services online.
             </p>
-
-            <a
-              href="https://embrand.vercel.app/"
-              class="link link-primary link-pink"
-              target="blank"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/theakshaymore/E-Commerce-MERN"
-              class="link link-secondary link-secondary-pink"
-              target="blank"
-            >
-              View Source</a
-            >
+            <div class="app-links">
+              <a
+                href="https://embrand.vercel.app/"
+                target="_blank"
+                class="app-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/theakshaymore/E-Commerce-MERN"
+                target="_blank"
+                class="app-link"
+                >Source</a
+              >
+            </div>
           </div>
 
-          <div class="work-card">
-            <img
-              src="./assets/projimages/Magic-Memory.gif"
-              alt=""
-              class="work-image"
-            />
-            <p class="project-title mt-3">Magic Memory</p>
-            <p class="work-subtitle">
+          <div class="app-card">
+            <h3>ImageBase</h3>
+            <p>
+              Imagebase 🤳📸 is a modern image management platform built with
+              Node.js, React, Next.js, and TypeScript. It offers seamless image
+              storage, sharing, and payment functionality.
+            </p>
+            <div class="app-links">
+              <a
+                href="https://imagebase.vercel.app/"
+                target="_blank"
+                class="app-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/theakshaymore/imagebase"
+                target="_blank"
+                class="app-link"
+                >Source</a
+              >
+            </div>
+          </div>
+
+          <div class="app-card">
+            <h3>MakeScene</h3>
+            <p>
+              The MakeScene allows you to create an image given a text prompt.
+              Built using Node, Express, React & OpenAI APIs. The more detailed
+              the description, the more likely you are to get the result that
+              you want!
+            </p>
+            <div class="app-links">
+              <a
+                href="https://openai-lac.vercel.app/"
+                target="_blank"
+                class="app-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/theakshaymore/openAI"
+                target="_blank"
+                class="app-link"
+                >Source</a
+              >
+            </div>
+          </div>
+
+          <div class="app-card">
+            <h3>Magic Memory</h3>
+            <p>
               Magic Memory is a simple game developed using ReactJS, HTML, CSS.
               A series of images will appear in a box shape area while playing
               this game. The player has to find the two same images and click on
               them to make them disappear.
             </p>
-            <a
-              href="https://theakshaymore.github.io/Magic-Match/"
-              class="link link-primary link-pink"
-              target="blank"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/theakshaymore/Magic-Match"
-              class="link link-secondary link-secondary-pink"
-              target="blank"
-            >
-              View Source</a
-            >
+            <div class="app-links">
+              <a
+                href="https://theakshaymore.github.io/Magic-Match/"
+                target="_blank"
+                class="app-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/theakshaymore/Magic-Match"
+                target="_blank"
+                class="app-link"
+                >Source</a
+              >
+            </div>
           </div>
-        </div>
-        <!-- 2nd row -->
-        <div class="section-info project-row">
-          <div class="work-card">
-            <img
-              src="./assets/projimages/netflix.gif"
-              alt=""
-              class="work-image"
-            />
-            <p class="project-title mt-3">Netflix Clone</p>
-            <p class="work-subtitle">
-              Clone of Netflix Website. Built using Reactjs, HTML and CSS and
-              MovieDBAPI
-              <br />
-              <br />
-            </p>
 
-            <a
-              href="https://netflixclone-94123.web.app/"
-              class="link link-primary link-pink"
-              target="blank"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/theakshaymore/Netflix-Clone"
-              class="link link-secondary link-secondary-pink"
-              target="blank"
-            >
-              View Source</a
-            >
-          </div>
-          <div class="work-card">
-            <img
-              src="./assets/projimages/Imagebase.png"
-              alt=""
-              class="work-image"
-            />
-            <p class="project-title mt-3">ImageBase</p>
-            <p class="work-subtitle">
-              Imagebase 🤳📸 is a modern image management platform built with
-              Node.js, React, Next.js, and TypeScript. It offers seamless image
-              storage, sharing, and payment functionality, utilizing MongoDB as
-              the database and Razorpay for secure payment processing.
+          <div class="app-card">
+            <h3>Netflix Clone</h3>
+            <p>
+              Clone of Netflix Website. Built using Reactjs, HTML and CSS and
+              MovieDBAPI to fetch and display movie information in a
+              Netflix-like interface.
             </p>
-            <a
-              href="https://imagebase.vercel.app/"
-              class="link link-primary link-pink"
-              target="blank"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/theakshaymore/imagebase"
-              class="link link-secondary link-secondary-pink"
-              target="blank"
-            >
-              View Source</a
-            >
+            <div class="app-links">
+              <a
+                href="https://netflixclone-94123.web.app/"
+                target="_blank"
+                class="app-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/theakshaymore/Netflix-Clone"
+                target="_blank"
+                class="app-link"
+                >Source</a
+              >
+            </div>
           </div>
-        </div>
-        <!-- 3rd row -->
-        <div class="section-info project-row">
-          <div class="work-card">
-            <img
-              src="./assets/projimages/newsday.gif"
-              alt=""
-              class="work-image"
-            />
-            <p class="project-title mt-3">NewsDay.io</p>
-            <p class="work-subtitle">
+
+          <div class="app-card">
+            <h3>NewsDay.io</h3>
+            <p>
               A Newsday.io app shows you latest news/article about current
               affairs and various others things. Built with ReactJS, HTML and
               CSS.
             </p>
-
-            <a
-              href="https://theakshaymore.github.io/NewsDay/"
-              class="link link-primary link-pink"
-              target="blank"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/theakshaymore/NewsDay"
-              class="link link-secondary link-secondary-pink"
-              target="blank"
-            >
-              View Source</a
-            >
-          </div>
-
-          <div class="work-card">
-            <img
-              src="./assets/projimages/MakeScene.gif"
-              alt=""
-              class="work-image"
-            />
-            <p class="project-title mt-3">MakeScene</p>
-            <p class="work-subtitle">
-              The MakeScene allows you to create an image given a text prompt.
-              Build using Node, Express, React & OpenAI APIs. The more detailed
-              the description, the more likely you are to get the result that
-              you or your end user want
-            </p>
-            <a
-              href="https://openai-lac.vercel.app/"
-              class="link link-primary link-pink"
-              target="blank"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/theakshaymore/openAI"
-              class="link link-secondary link-secondary-pink"
-              target="blank"
-            >
-              View Source</a
-            >
+            <div class="app-links">
+              <a
+                href="https://theakshaymore.github.io/NewsDay/"
+                target="_blank"
+                class="app-link"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/theakshaymore/NewsDay"
+                target="_blank"
+                class="app-link"
+                >Source</a
+              >
+            </div>
           </div>
         </div>
-        <!-- 4th row -->
-        <div class="section-info project-row">
-          <div class="work-card">
-            <img
-              src="./assets/projimages/proctor.gif"
-              alt=""
-              class="work-image"
-            />
-            <p class="project-title mt-3">Proctor System</p>
-            <p class="work-subtitle">
-              Proctor System is MIS website For Maanaging Student Information.
-              Built using PHP, html, css and Bootstrap.
-            </p>
-            <a
-              href="http://proctorsystem.epizy.com/"
-              class="link link-primary link-pink"
-              target="blank"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/HARDIKY/Proctor-System"
-              class="link link-secondary link-secondary-pink"
-              target="blank"
-            >
-              View Source</a
-            >
-          </div>
-          <div class="work-card">
-            <img
-              src="./assets/projimages/Magic-Memory.gif"
-              alt="under_development"
-              class="work-image"
-            />
-            <p class="project-title mt-3">under development</p>
-            <p class="work-subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              omnis!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Optio, omnis!
-            </p>
-            <a href="" class="link link-primary link-pink"> Live Demo</a>
-            <a href="" class="link link-secondary link-secondary-pink">
-              View Source</a
-            >
-          </div>
-        </div>
-      </div>
 
-      <!-- <div class="section-info">
-        <div class="work-card">
-          <img src="./assets/projectmaking.svg" alt="" class="work-image" />
-          <p class="work-title mt-3">Projects</p>
-          <p class="work-subtitle">
-            I like to showcase my work and thus, you can see my projects hosted
-            online
+        <div class="more-apps">
+          <h3>More Apps</h3>
+          <p>
+            I've built many more apps throughout my coding journey. You can
+            check them out here 👇
           </p>
-          <a href="./projects.html" class="link link-primary link-purple">
-            Try my projects</a
+          <a href="./projects.html" class="btn btn-outline"
+            >View All Projects</a
           >
         </div>
+      </section>
 
-        <div class="work-card">
-          <img src="./assets/blogwriting.svg" alt="" class="work-image" />
-          <p class="work-title">Blogs</p>
-          <p class="work-subtitle">
-            I am also working on some technical blogs. I like to document my
-            journey of learning
+      <!-- Achievements Section -->
+      <section id="achievements" class="achievements-section">
+        <h2 class="section-title">03. My Achievements</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <h3>Full Stack Developer</h3>
+            <h4>Self-taught 2023</h4>
+            <p>
+              Became a proficient full-stack developer through self-learning and
+              building multiple projects using modern web technologies.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Open Source Contributor</h3>
+            <h4>GitHub Community</h4>
+            <p>
+              Actively contributing to open source projects and maintaining
+              personal repositories with clean, well-documented code.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Project Builder</h3>
+            <h4>Multiple Platforms</h4>
+            <p>
+              Successfully built and deployed multiple full-stack applications
+              using React, Node.js, MongoDB, and other modern technologies.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Problem Solver</h3>
+            <h4>Continuous Learning</h4>
+            <p>
+              Consistently solving complex programming challenges and
+              implementing innovative solutions for real-world problems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog-section">
+        <h2 class="section-title">04. My Blog</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <h3>Building Full Stack Applications with MERN</h3>
+            <p>
+              A comprehensive guide on building modern web applications using
+              MongoDB, Express.js, React, and Node.js stack.
+            </p>
+          </div>
+
+          <div class="blog-card">
+            <h3>Modern JavaScript: ES6+ Features You Should Know</h3>
+            <p>
+              Exploring the latest JavaScript features and how they can improve
+              your code quality and development experience.
+            </p>
+          </div>
+
+          <div class="blog-card">
+            <h3>React Best Practices for 2024</h3>
+            <p>
+              A collection of best practices, patterns, and techniques for
+              building scalable React applications.
+            </p>
+          </div>
+
+          <div class="blog-card">
+            <h3>Database Design Principles</h3>
+            <p>
+              Understanding the fundamentals of database design and how to
+              structure your data for optimal performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="more-articles">
+          <h3>More Articles</h3>
+          <p>
+            I've written more articles in my coding journey. You can check them
+            out here 👇
           </p>
-          <a href="./blogs.html" class="link link-primary link-pink">
-            Checkout my blogs</a
-          >
+          <a href="./blogs.html" class="btn btn-outline">Read All Articles</a>
         </div>
-      </div> -->
-    </section>
-    <div class="view-more-project-btn">
-      <a href="./projects.html" class=""> View More Projects</a>
-    </div>
+      </section>
 
-    <!-- Technology -->
-    <section
-      id="technologies"
-      class="section-technologies container container-center"
-    >
-      <div class="section-title">
-        <h1 class="section-heading">Technologies</h1>
-        <h1 class="section-sub-heading">I'm familiar with</h1>
-      </div>
-      <div class="section-info">
-        <div class="tech-image">
-          <img
-            src="./assets/certificate.svg"
-            alt=""
-            srcset=""
-            width="400"
-            height="400"
-          />
-        </div>
-
-        <div class="techs">
-          <div class="tech-row">
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/html5.svg" alt="" />
-              <p class="tech-name">HTML</p>
-            </div>
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/css3.svg" alt="" />
-              <p class="tech-name">CSS</p>
-            </div>
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/javascript.svg" alt="" />
-              <p class="tech-name">JS</p>
-            </div>
+      <!-- Talks Section -->
+      <section id="talks" class="talks-section">
+        <h2 class="section-title">05. My Talks</h2>
+        <div class="talks-grid">
+          <div class="talk-card">
+            <h3>Modern Web Development with React</h3>
+            <h4>Tech Meetup Mumbai</h4>
           </div>
 
-          <div class="tech-row">
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/react.svg" alt="" />
-              <p class="tech-name">React.js</p>
-            </div>
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/flutter.svg" alt="" />
-              <p class="tech-name">Flutter</p>
-            </div>
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/git.svg" alt="" />
-              <p class="tech-name">Git</p>
-            </div>
-          </div>
-
-          <div class="tech-row">
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/mongodb.svg" alt="" />
-              <p class="tech-name">MongoDB</p>
-            </div>
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/mysql.svg" alt="" />
-              <p class="tech-name">MySQL</p>
-            </div>
-            <div class="tech-card">
-              <img class="tech-icon" src="./assets/netlify.svg" alt="" />
-              <p class="tech-name">Hosting</p>
-            </div>
+          <div class="talk-card">
+            <h3>Building Scalable APIs with Node.js</h3>
+            <h4>Developer Conference 2023</h4>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer id="footer" class="footer">
-      <div class="footer-header" style="margin-bottom: 2rem">get in touch</div>
+      </section>
 
-      <ul class="social-links list-non-bullet" style="margin-bottom: 2rem">
-        <li class="list-item-inline">
-          <a href="https://twitter.com/AkshhayMore" class="link" target="blank">
-            <img
-              src="./assets/twitter1.svg"
-              alt="Twitter link"
-              class="footer-icon"
-            />
-          </a>
-        </li>
-        <li class="list-item-inline">
-          <a
-            href="https://github.com/theakshaymore"
-            class="link"
-            target="blank"
-          >
-            <img
-              src="./assets/github.svg"
-              alt="GitHub link"
-              class="footer-icon"
-            />
-          </a>
-        </li>
-        <li class="list-item-inline">
-          <a
-            href="https://www.linkedin.com/in/akshaymore1/"
-            class="link"
-            target="blank"
-          >
-            <img
-              src="./assets/linkedin.svg"
-              alt="Linkedin link"
-              class="footer-icon"
-            />
-          </a>
-        </li>
-        <!-- <li class="list-item-inline">
-          <a
-            href="https://www.instagram.com/akshhay.more/"
-            class="link"
-            target="blank"
-          >
-            <img
-              src="./assets/instagram.svg"
-              alt="Instagram link"
-              class="footer-icon"
-            />
-          </a>
-        </li> -->
-      </ul>
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <h2 class="section-title">06. My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">React.js</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">Node.js</div>
+          <div class="skill-item">MongoDB</div>
+          <div class="skill-item">Express.js</div>
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">Git</div>
+          <div class="skill-item">MySQL</div>
+          <div class="skill-item">Flutter</div>
+          <div class="skill-item">TypeScript</div>
+          <div class="skill-item">Next.js</div>
+        </div>
+      </section>
 
-      <a href="https://www.buymeacoffee.com/akshaymore" target="_blank"
-        ><img
-          src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-          alt="Buy Me A Coffee"
-          style="height: 60px !important; width: 217px !important"
-      /></a>
-    </footer>
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2 class="section-title">07. Get in Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/theakshaymore" target="_blank"
+              >@theakshaymore</a
+            >
+          </div>
+
+          <div class="contact-card">
+            <h3>Twitter</h3>
+            <a href="https://twitter.com/AkshhayMore" target="_blank"
+              >@AkshhayMore</a
+            >
+          </div>
+
+          <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/akshaymore1/" target="_blank"
+              >@akshaymore1</a
+            >
+          </div>
+
+          <div class="contact-card">
+            <h3>Mail</h3>
+            <a href="mailto:akshaymore.dev@gmail.com"
+              >akshaymore.dev@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
